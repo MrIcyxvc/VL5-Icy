@@ -751,12 +751,41 @@
       </div>
     </section>
 
+    <!-- Footer with View Counter -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">Made with ❤️ by VL5 Icy</p>
+          <div class="view-counter">
+            <i class="ri-eye-line"></i>
+            <span id="view-count">Loading...</span> views
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Particles.js library -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- Particles configuration -->
     <script src="particles.js"></script>
     <!-- JavaScript for animations and interactions -->
     <script src="script.js"></script>
+    <!-- View Counter Script -->
+    <script>
+      // Using CountAPI for free view counting (no signup required)
+      const countApiUrl =
+        "https://api.countapi.xyz/hit/mricyxvc-vl5-icy/visits";
+
+      fetch(countApiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("view-count").textContent =
+            data.value.toLocaleString();
+        })
+        .catch(() => {
+          document.getElementById("view-count").textContent = "N/A";
+        });
+    </script>
   </body>
 </html>
 <!-- end of VL5 Icy's Portfolio Website HTML -->

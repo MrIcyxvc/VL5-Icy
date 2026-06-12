@@ -1053,4 +1053,53 @@ section {
   background: rgba(0, 212, 255, 0.3);
   color: var(--text-primary);
 }
+
+/* Footer Styles */
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.view-counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-tertiary);
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+}
+
+.view-counter i {
+  color: var(--accent-cyan);
+}
+
+#view-count {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /*end of styles.css*/
