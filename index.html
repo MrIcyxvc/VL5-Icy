@@ -757,8 +757,11 @@
         <div class="footer-content">
           <p class="footer-text">Made with ❤️ by VL5 Icy</p>
           <div class="view-counter">
-            <i class="ri-eye-line"></i>
-            <span id="view-count">Loading...</span> views
+            <img
+              src="https://visitor-badge.laobi.icu/badge?page_id=mricyxvc-vl5-icy&left_color=%230a0a0a&right_color=%2300d4ff"
+              alt="Views"
+              class="view-badge"
+            />
           </div>
         </div>
       </div>
@@ -770,22 +773,6 @@
     <script src="particles.js"></script>
     <!-- JavaScript for animations and interactions -->
     <script src="script.js"></script>
-    <!-- View Counter Script -->
-    <script>
-      // Using CountAPI for free view counting (no signup required)
-      const countApiUrl =
-        "https://api.countapi.xyz/hit/mricyxvc-vl5-icy/visits";
-
-      fetch(countApiUrl)
-        .then((response) => response.json())
-        .then((data) => {
-          document.getElementById("view-count").textContent =
-            data.value.toLocaleString();
-        })
-        .catch(() => {
-          document.getElementById("view-count").textContent = "N/A";
-        });
-    </script>
   </body>
 </html>
 <!-- end of VL5 Icy's Portfolio Website HTML -->
