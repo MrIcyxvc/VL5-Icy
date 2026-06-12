@@ -1054,40 +1054,21 @@ section {
   color: var(--text-primary);
 }
 
-/* Footer Styles */
-.footer {
-  padding: 2rem 0;
-  border-top: 1px solid var(--border-color);
-  background: var(--bg-secondary);
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.footer-text {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
-
-.view-counter {
+/* Nav Views Badge */
+.nav-views {
   display: flex;
   align-items: center;
+  margin-left: 1.5rem;
 }
 
-.view-badge {
-  height: 24px;
+.view-badge-nav {
+  height: 22px;
   border-radius: 4px;
 }
 
 @media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
+  .nav-views {
+    display: none;
   }
 }
 
