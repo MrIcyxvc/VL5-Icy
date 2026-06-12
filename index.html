@@ -33,11 +33,7 @@
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <div class="nav-views">
-          <img
-            src="https://visitor-badge.laobi.icu/badge?page_id=mricyxvc-vl5-icy&left_color=%230a0a0a&right_color=%2300d4ff"
-            alt="Views"
-            class="view-badge-nav"
-          />
+          <span id="view-count" class="view-badge-nav">Loading...</span>
         </div>
         <div class="hamburger">
           <span class="bar"></span>
@@ -764,6 +760,44 @@
     <script src="particles.js"></script>
     <!-- JavaScript for animations and interactions -->
     <script src="script.js"></script>
+    <!-- View Counter - Only counts unique visitors -->
+    <script>
+      (function () {
+        const viewCountUrl =
+          "https://api.countapi.xyz/hit/mricyxvc-vl5-icy/unique-visits";
+        const getCountUrl =
+          "https://api.countapi.xyz/get/mricyxvc-vl5-icy/unique-visits";
+        const storageKey = "vl5-icy-visited";
+
+        // Check if user has already visited
+        const hasVisited = localStorage.getItem(storageKey);
+
+        if (!hasVisited) {
+          // First visit - increment counter
+          fetch(viewCountUrl)
+            .then((response) => response.json())
+            .then((data) => {
+              document.getElementById("view-count").textContent =
+                data.value.toLocaleString() + " views";
+              localStorage.setItem(storageKey, "true");
+            })
+            .catch(() => {
+              document.getElementById("view-count").textContent = "N/A views";
+            });
+        } else {
+          // Returning visitor - just get current count without incrementing
+          fetch(getCountUrl)
+            .then((response) => response.json())
+            .then((data) => {
+              document.getElementById("view-count").textContent =
+                data.value.toLocaleString() + " views";
+            })
+            .catch(() => {
+              document.getElementById("view-count").textContent = "N/A views";
+            });
+        }
+      })();
+    </script>
   </body>
 </html>
 <!-- end of VL5 Icy's Portfolio Website HTML -->

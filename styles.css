@@ -1062,11 +1062,16 @@ section {
 }
 
 .view-badge-nav {
-  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 1.25rem;
   border-radius: 50px;
   border: 2px solid rgba(139, 92, 246, 0.5);
-  padding: 2px 6px;
   background: rgba(139, 92, 246, 0.1);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
