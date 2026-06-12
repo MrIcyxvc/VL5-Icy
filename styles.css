@@ -1054,7 +1054,7 @@ section {
   color: var(--text-primary);
 }
 
-/* Nav Views Badge */
+/* Nav Views Badge - Pill Style */
 .nav-views {
   display: flex;
   align-items: center;
@@ -1062,8 +1062,17 @@ section {
 }
 
 .view-badge-nav {
-  height: 22px;
-  border-radius: 4px;
+  height: 28px;
+  border-radius: 50px;
+  border: 2px solid rgba(139, 92, 246, 0.5);
+  padding: 2px 6px;
+  background: rgba(139, 92, 246, 0.1);
+  transition: all 0.3s ease;
+}
+
+.view-badge-nav:hover {
+  border-color: rgba(139, 92, 246, 0.8);
+  background: rgba(139, 92, 246, 0.2);
 }
 
 @media (max-width: 768px) {
