@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VL5 Icy</title>
+    <!-- Favicon - Browser tab icon -->
+    <link rel="icon" type="image/png" href="Images/ken.png" />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Remix Icons - Icon library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts - Inter & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo"> VL5 Icy </a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Particles Background - Shows on entire page -->
+    <div id="particles-js"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-subtitle reveal-text">Hello, I'm</p>
+        <h1 class="hero-title">
+          <span class="gradient-text reveal-text">VL5 Icy</span>
+        </h1>
+        <p class="hero-description reveal-text"></p>
+        <div class="hero-buttons reveal-text">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">
+            Learning about coding and
+            <span class="gradient-text">building</span> cool projects
+          </h2>
+        </div>
+        <div class="about-content">
+          <div class="about-image reveal">
+            <div class="image-frame">
+              <img src="Images/ken.png" alt="VL5 Icy" class="profile-image" />
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p>
+              I'm a student who enjoys coding, gaming, listening to music, and
+              building cool projects. I'm interested in software engineering and
+              enjoy learning new technologies and creating things that people
+              can use.
+            </p>
+            <p>
+              When I'm not coding, you'll find me gaming, listening to music, or
+              working on new ideas. And sleeping of course. And I'm also a quite
+              guy.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Programming Languages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- GitHub Projects - Links open in new tab -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Projects</span>
+          </h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-scissors-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/rock-paper-scissors"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="View Rock Paper Scissors project"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Rock Paper Scissors</h3>
+              <p class="project-description">
+                Classic game implemented with HTML, CSS, and JavaScript. Play
+                against the computer with score tracking.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-time-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/Stopwatch"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="View Stopwatch project"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Stopwatch</h3>
+              <p class="project-description">
+                A functional stopwatch application with start, stop, and reset
+                functionality. Made with Python.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-file-text-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/Icyxvcz"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="View Icyxvcz project"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Icyxvcz</h3>
+              <p class="project-description">
+                Personal project showcasing that's about me a bit.
+              </p>
+              <div class="project-tags">
+                <span class="tag">README</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-terminal-box-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/Icy-Console-Injector"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="View Icy Console Injector project"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Icy Console Injector</h3>
+              <p class="project-description">
+                A console injector for Roblox Fast Flags that allows users to
+                modify game behavior.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">
+            Skills & <span class="gradient-text">Technologies</span>
+          </h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category reveal">
+            <h3 class="category-title">Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2L2 7L4.5 17.5L12 22L19.5 17.5L22 7L12 2Z"
+                      fill="#E34F26"
+                    />
+                    <path
+                      d="M12 4.5L18.5 7.5L16.5 15.5L12 18L7.5 15.5L5.5 7.5L12 4.5Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M12 8L16 8L15.5 14L12 15.5L8.5 14L8.25 11.5H10L10.1 12.75L12 13.25L13.9 12.75L14 10.5H8L7.5 7H16.5L16 8"
+                      fill="#E34F26"
+                    /></svg
+                  >HTML</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="100"></div>
+                  <span class="skill-percentage">100%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2L2 7L4.5 17.5L12 22L19.5 17.5L22 7L12 2Z"
+                      fill="#1572B6"
+                    />
+                    <path
+                      d="M12 4.5L18.5 7.5L16.5 15.5L12 18L7.5 15.5L5.5 7.5L12 4.5Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M12 8L16 8L15.5 14L12 15.5L8.5 14L8.25 11.5H10L10.1 12.75L12 13.25L13.9 12.75L14 10.5H8L7.5 7H16.5L16 8"
+                      fill="#1572B6"
+                    /></svg
+                  >CSS</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="100"></div>
+                  <span class="skill-percentage">100%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" rx="2" fill="#F7DF1E" />
+                    <path
+                      d="M6 19.5V19.5C6 19.5 7.5 20.5 9.5 20.5C11.5 20.5 12.5 19.5 12.5 18C12.5 16.5 11.5 16 9.5 15.5C8.5 15.25 8 15 8 14.5C8 14 8.5 13.5 9.5 13.5C10.5 13.5 11.5 14 11.5 14L12.5 12.5C12.5 12.5 11 11.5 9.5 11.5C7.5 11.5 6 12.5 6 14.5C6 16 7 16.5 9 17C10 17.25 10.5 17.5 10.5 18C10.5 18.5 10 19 9 19C7.5 19 6.5 18 6.5 18L6 19.5ZM14 11.5H16L16 17.5C16 17.5 16.5 18 17.5 18C18.5 18 19 17.5 19 17.5L19.5 19C19.5 19 18.5 20 17 20C15.5 20 14 19 14 17.5L14 11.5Z"
+                      fill="#323330"
+                    /></svg
+                  >JavaScript</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C9 2 8 3 8 5V7H12V8H6C4 8 3 9 3 12C3 15 4 16 6 16H7V13C7 11 8 10 10 10H14C15.5 10 16 9.5 16 8V5C16 3 14 2 12 2ZM9 4.5C9.5 4.5 10 5 10 5.5C10 6 9.5 6.5 9 6.5C8.5 6.5 8 6 8 5.5C8 5 8.5 4.5 9 4.5Z"
+                      fill="#3776AB"
+                    />
+                    <path
+                      d="M17 8V11C17 13 16 14 14 14H10C8.5 14 8 14.5 8 16V19C8 21 10 22 12 22C15 22 16 21 16 19V17H12V16H18C20 16 21 15 21 12C21 9 20 8 18 8H17ZM15 17.5C15.5 17.5 16 18 16 18.5C16 19 15.5 19.5 15 19.5C14.5 19.5 14 19 14 18.5C14 18 14.5 17.5 15 17.5Z"
+                      fill="#FFD43B"
+                    /></svg
+                  >Python</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75"></div>
+                  <span class="skill-percentage">75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="category-title">Development Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                      fill="#F05032"
+                    />
+                    <path
+                      d="M12 6V12L16 16"
+                      stroke="#F05032"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    /></svg
+                  >Git</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                  <span class="skill-percentage">80%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4 4H20V20H4V4Z" fill="#007ACC" />
+                    <path
+                      d="M8 8L8 16L12 14L16 18V6L12 10L8 8Z"
+                      fill="white"
+                    /></svg
+                  >VS Code</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="10" fill="#2496ED" />
+                    <path
+                      d="M8 12H16M12 8V16"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    /></svg
+                  >Docker</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="60"></div>
+                  <span class="skill-percentage">60%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="2"
+                      y="4"
+                      width="20"
+                      height="16"
+                      rx="2"
+                      fill="#181717"
+                    />
+                    <path
+                      d="M6 8L6 16M10 8L10 16M14 8L14 16M18 8L18 16"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    /></svg
+                  >Terminal</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="category-title">Soft Skills</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6V12L16 14" /></svg
+                  >Problem Solving</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                    />
+                    <circle cx="9" cy="7" r="4" />
+                    <path
+                      d="M23 21V19C23 17.9391 22.5786 16.9217 21.8284 16.1716C21.0783 15.4214 20.0609 15 19 15V15"
+                    />
+                    <circle cx="19" cy="7" r="4" /></svg
+                  >Teamwork</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="0"></div>
+                  <span class="skill-percentage">0%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 20H21" />
+                    <path
+                      d="M16.5 3.5L20.5 7.5L7 21L3 21L3 17L16.5 3.5Z"
+                    /></svg
+                  >Creativity</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><svg
+                    class="skill-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                    <path d="M2 17L12 22L22 17" />
+                    <path d="M2 12L12 17L22 12" /></svg
+                  >Learning</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="95"></div>
+                  <span class="skill-percentage">95%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Links - Email opens Gmail compose -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info reveal">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">
+              Let's create something
+              <span class="gradient-text">amazing</span> together
+            </h2>
+            <p class="contact-description">
+              Want to connect me? Reach out of any social media listed below or
+              send me an email.
+            </p>
+            <div class="contact-links">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=benecarr5@gmail.com"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                benecarr5@gmail.com
+              </a>
+              <a
+                href="https://search.brave.com/search?q=Boerne%2C+TX"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Boerne, TX
+              </a>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.419-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/benjamin-carr-6979b5368/"
+                class="social-link"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/NMLIcy"
+                class="social-link"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@icyxvc"
+                class="social-link"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal">
+            <div class="form-group">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                rows="5"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Particles.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Particles configuration -->
+    <script src="particles.js"></script>
+    <!-- JavaScript for animations and interactions -->
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- end of VL5 Icy's Portfolio Website HTML -->
