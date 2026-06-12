@@ -630,6 +630,25 @@ section {
   border: 1px solid var(--border-color);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.skill-category::-webkit-scrollbar {
+  width: 6px;
+}
+
+.skill-category::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.skill-category::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.skill-category::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
 }
 
 .category-title {
@@ -699,6 +718,9 @@ section {
 }
 .skill-progress[data-progress="92"] {
   width: 92%;
+}
+.skill-progress[data-progress="93"] {
+  width: 93%;
 }
 .skill-progress[data-progress="88"] {
   width: 88%;
