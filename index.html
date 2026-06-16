@@ -734,30 +734,30 @@
     <script src="particles.js"></script>
     <script src="script.js"></script>
     <script>
-      (function () {
-        const viewCountUrl =
-          "https://api.visitorbadge.io/api/visitors?path=mricyxvc.github.io%2Fvl5-icy&label=Visitors&labelColor=%238b5cf6&countColor=%23a855f7&style=flat";
-        const viewCountEl = document.getElementById("view-count");
+  (function () {
+    const viewCountUrl =
+      "https://api.visitorbadge.io/api/visitors?path=mricyxvc.github.io%2Fvl5-icy&label=Visitors&labelColor=%238b5cf6&countColor=%23a855f7&style=flat";
+    const viewCountEl = document.getElementById("view-count");
 
-        fetch(viewCountUrl)
-          .then((response) => {
-            if (!response.ok) throw new Error("Visitor badge unavailable");
-            return response.text();
-          })
-          .then((svgText) => {
-            const match = svgText.match(/>([\d,]+)</);
-            const count = match ? match[1] : null;
-            viewCountEl.textContent = count
-              ? count + " views"
-              : "Visitor counter unavailable";
-          })
-          .catch(() => {
-            viewCountEl.textContent = "Visitor counter unavailable";
-          });
+    fetch(viewCountUrl)
+      .then((response) => {
+        if (!response.ok) throw new Error("Visitor badge unavailable");
+        return response.text();
+      })
+      .then((svgText) => {
+        const match = svgText.match(/>([\d,]+)</);
+        const count = match ? match[1] : null;
+        viewCountEl.textContent = count
+          ? count + " views"
+          : "Visitor counter unavailable";
+      })
+      .catch(() => {
+        viewCountEl.textContent = "Visitor counter unavailable";
+      });
 
-        document.getElementById("footer-year").textContent =
-          new Date().getFullYear();
-      })();
-    </script>
+    document.getElementById("footer-year").textContent =
+      new Date().getFullYear();
+  })();
+</script>
   </body>
 </html>
