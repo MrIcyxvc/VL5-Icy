@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>VL5 Icy — Portfolio</title>
+    <link rel="icon" type="image/png" href="images/ken.png" />
+    <link rel="stylesheet" href="Style.css?v=7" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">VL5 Icy</a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a
+          href="https://discord.gg/F8m922he7W"
+          class="discord-button"
+          target="_blank"
+          rel="noopener"
+          aria-label="Join my Discord server"
+        >
+          <i class="ri-discord-fill"></i>
+          <span>Discord</span>
+        </a>
+        <button
+          class="hamburger"
+          aria-label="Menu"
+          aria-expanded="false"
+          type="button"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-subtitle reveal-text">Hello, I'm</p>
+        <h1 class="hero-title">
+          <span class="gradient-text reveal-text">VL5 Icy</span>
+        </h1>
+        <p class="hero-description reveal-text">
+          Student developer building cool things with code passionate about
+          software engineering & open-source
+        </p>
+        <div class="hero-buttons reveal-text">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">
+            Learning about coding and
+            <span class="gradient-text">building</span> cool projects
+          </h2>
+        </div>
+        <div class="about-content">
+          <div class="about-image reveal">
+            <div class="image-frame">
+              <img
+                src="images/ken.png"
+                alt="VL5 Icy profile"
+                class="profile-image"
+              />
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p>
+              I'm a 17-year-old student who enjoys coding, gaming, listening to
+              music, and building cool projects. I'm interested in software
+              engineering and enjoy learning new technologies and creating
+              things that people can use.
+            </p>
+            <p>
+              When I'm not coding, I'm exploring new ideas, contributing to
+              open-source. I'm also a quiet person — I prefer working alone.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Programming Languages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Projects</span>
+          </h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-scissors-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/rock-paper-scissors"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="Rock Paper Scissors"
+                >
+                  <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Rock Paper Scissors</h3>
+              <p class="project-description">
+                Polished browser game with real-time score tracking, responsive
+                design, and clean UI.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span
+                ><span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-time-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/Stopwatch"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="Stopwatch"
+                >
+                  <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Stopwatch</h3>
+              <p class="project-description">
+                Precise stopwatch desktop app with Python & clean GUI: start,
+                stop, reset and lap timing.
+              </p>
+              <div class="project-tags"><span class="tag">Python</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-file-text-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/Icyxvcz"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="Icyxvcz"
+                >
+                  <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Icyxvcz</h3>
+              <p class="project-description">
+                GitHub profile README & branding repo that showcases who I am
+                and what I build.
+              </p>
+              <div class="project-tags">
+                <span class="tag">README</span><span class="tag">GitHub</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="ri-terminal-box-line"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/MrIcyxvc/Icy-Console-Injector"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link"
+                  aria-label="Icy Console Injector"
+                >
+                  <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Icy Console Injector</h3>
+              <p class="project-description">
+                Python-based console injector for managing Roblox Fast Flags.
+                Tooling & low-level exploration.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span><span class="tag">Tooling</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="projects-cta reveal">
+          <p>
+            Want to see more?
+            <a
+              href="https://github.com/MrIcyxvc"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-cta-link"
+              >Explore all projects on GitHub <i class="ri-arrow-right-line"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section - PNG Icons Only -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">
+            Skills & <span class="gradient-text">Technologies</span>
+          </h2>
+        </div>
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category reveal">
+            <h3 class="category-title">💭 Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/html.png"
+                    alt="HTML"
+                    class="skill-icon-img"
+                  />
+                  HTML</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="100"></div>
+                  <span class="skill-percentage">100%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/css.png"
+                    alt="CSS"
+                    class="skill-icon-img"
+                  />
+                  CSS</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="100"></div>
+                  <span class="skill-percentage">100%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/javascript.png"
+                    alt="JavaScript"
+                    class="skill-icon-img"
+                  />
+                  JavaScript</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="100"></div>
+                  <span class="skill-percentage">100%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/python.png"
+                    alt="Python"
+                    class="skill-icon-img"
+                  />
+                  Python</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="65"></div>
+                  <span class="skill-percentage">65%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/c++.png"
+                    alt="C++"
+                    class="skill-icon-img"
+                  />
+                  C++</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="20"></div>
+                  <span class="skill-percentage">20%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/typescript.png"
+                    alt="TypeScript"
+                    class="skill-icon-img"
+                  />
+                  TypeScript</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="0"></div>
+                  <span class="skill-percentage">0%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/java.png"
+                    alt="Java"
+                    class="skill-icon-img"
+                  />
+                  Java</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="0"></div>
+                  <span class="skill-percentage">0%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/c-sharp.png"
+                    alt="C#"
+                    class="skill-icon-img"
+                  />
+                  C#</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="0"></div>
+                  <span class="skill-percentage">0%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/php.png"
+                    alt="PHP"
+                    class="skill-icon-img"
+                  />
+                  PHP</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="0"></div>
+                  <span class="skill-percentage">0%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Development Tools -->
+          <div class="skill-category reveal">
+            <h3 class="category-title">🛠️ Development Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/git.png"
+                    alt="Git"
+                    class="skill-icon-img"
+                  />
+                  Git</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                  <span class="skill-percentage">80%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/vscode.png"
+                    alt="VS Code"
+                    class="skill-icon-img"
+                  />
+                  VS Code</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                  <span class="skill-percentage">90%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/docker.png"
+                    alt="Docker"
+                    class="skill-icon-img"
+                  />
+                  Docker</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="60"></div>
+                  <span class="skill-percentage">60%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/terminal.png"
+                    alt="Terminal"
+                    class="skill-icon-img"
+                  />
+                  Terminal</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/github.png"
+                    alt="GitHub"
+                    class="skill-icon-img"
+                  />
+                  GitHub</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="92"></div>
+                  <span class="skill-percentage">92%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/nodejs.png"
+                    alt="Node.js"
+                    class="skill-icon-img"
+                  />
+                  Node.js</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                  <span class="skill-percentage">85%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/npm.png"
+                    alt="npm"
+                    class="skill-icon-img"
+                  />
+                  npm</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="70"></div>
+                  <span class="skill-percentage">70%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/figma.png"
+                    alt="Figma"
+                    class="skill-icon-img"
+                  />
+                  Figma</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="0"></div>
+                  <span class="skill-percentage">0%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/linux.png"
+                    alt="Linux"
+                    class="skill-icon-img"
+                  />
+                  Linux</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="0"></div>
+                  <span class="skill-percentage">0%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Currently Learning -->
+          <div class="skill-category reveal">
+            <h3 class="category-title">💡Currently Learning</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/go.png"
+                    alt="Go"
+                    class="skill-icon-img"
+                  />
+                  Go</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="15"></div>
+                  <span class="skill-percentage">15%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/rust.png"
+                    alt="Rust"
+                    class="skill-icon-img"
+                  />
+                  Rust</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="10"></div>
+                  <span class="skill-percentage">10%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/typescript.png"
+                    alt="TypeScript"
+                    class="skill-icon-img"
+                  />
+                  TypeScript</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="20"></div>
+                  <span class="skill-percentage">20%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name"
+                  ><img
+                    src="images/icons/vue.png"
+                    alt="Vue"
+                    class="skill-icon-img"
+                  />
+                  Vue</span
+                >
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="10"></div>
+                  <span class="skill-percentage">10%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info reveal">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">
+              Let's create something
+              <span class="gradient-text">amazing</span> together
+            </h2>
+            <p class="contact-description">
+              Want to connect? Reach out via socials or email me directly.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:benecarr5@gmail.com" class="contact-link">
+                <i class="ri-mail-line"></i> benecarr5@gmail.com
+              </a>
+              <a
+                href="https://www.google.com/maps/search/Boerne,+TX"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+              >
+                <i class="ri-map-pin-line"></i> Boerne, TX
+              </a>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/MrIcyxvc"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                ><i class="ri-github-fill"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/benjamin-carr-6979b5368/"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><i class="ri-linkedin-fill"></i
+              ></a>
+              <a
+                href="https://x.com/NMLIcy"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Twitter"
+                ><i class="ri-twitter-x-line"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@icyxvc"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="YouTube"
+                ><i class="ri-youtube-fill"></i
+              ></a>
+            </div>
+          </div>
+          <form
+            class="contact-form reveal"
+            id="portfolio-contact-form"
+            action="https://formspree.io/f/mjkyjkal"
+            method="POST"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" "
+                required
+              />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" "
+                required
+              />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-copyright">
+            © <span id="footer-year">2026</span> VL5 Icy. All rights reserved.
+          </p>
+          <p class="footer-built">
+            Built with HTML, CSS, JavaScript & particles.js
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="Particles.js"></script>
+    <script src="Script.js"></script>
+    <script>
+      (function () {
+        const viewCountUrl =
+          "https://api.visitorbadge.io/api/visitors?path=mricyxvc.github.io%2Fvl5-icy&label=Visitors&labelColor=%238b5cf6&countColor=%23a855f7&style=flat";
+        const viewCountEl = document.getElementById("view-count");
+
+        fetch(viewCountUrl)
+          .then((response) => {
+            if (!response.ok) throw new Error("Visitor badge unavailable");
+            return response.text();
+          })
+          .then((svgText) => {
+            const match = svgText.match(/>([\d,]+)</);
+            const count = match ? match[1] : null;
+            viewCountEl.textContent = count
+              ? count + " views"
+              : "Visitor counter unavailable";
+          })
+          .catch(() => {
+            viewCountEl.textContent = "Visitor counter unavailable";
+          });
+
+        document.getElementById("footer-year").textContent =
+          new Date().getFullYear();
+      })();
+    </script>
+  </body>
+</html>
