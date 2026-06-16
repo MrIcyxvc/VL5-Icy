@@ -6,12 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initSkillBars();
   initContactForm();
   initBackToTop();
-
-  // Update footer year
-  const yearElement = document.getElementById("footer-year");
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear().toString();
-  }
 });
 
 // navbar functionality
