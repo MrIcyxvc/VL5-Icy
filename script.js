@@ -116,7 +116,7 @@ function initSkillBars() {
   const animateSkillBars = () => {
     skillBars.forEach((bar) => {
       const rect = bar.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom > 0; // Check if the bar is in the viewport
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
 
       if (isVisible && !bar.classList.contains("animated")) {
         bar.classList.add("animated");
@@ -171,13 +171,20 @@ function initContactForm() {
       submitBtn.textContent = "Sending...";
       submitBtn.disabled = true;
 
+      // Get the form action (Formspree endpoint)
       const action = form.getAttribute("action");
-      const isFormspreeConfigured = action && !action.includes("YOUR_FORM_ID");
+      
+      // Check if Formspree is configured
+      const isFormspreeConfigured = action && 
+        action.includes("formspree.io") && 
+        !action.includes("YOUR_FORM_ID");
 
       if (!isFormspreeConfigured) {
+        // Fallback to mailto if Formspree not configured
+        openMailtoFallback(form);
         showNotification(
-          "Contact form is not configured yet. Please email me directly.",
-          "error",
+          "Form not configured. Opening Gmail instead.",
+          "error"
         );
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
@@ -185,28 +192,32 @@ function initContactForm() {
       }
 
       try {
+        // Send to Gmail via Formspree
         const response = await fetch(action, {
           method: "POST",
           body: new FormData(form),
-          headers: { Accept: "application/json" },
+          headers: { 
+            "Accept": "application/json" 
+          },
         });
 
         if (response.ok) {
-          showNotification("Message sent successfully!", "success");
+          showNotification("Message sent successfully to Gmail! ✅", "success");
           form.reset();
         } else {
-          // Formspree endpoint returned an error (e.g. 404). Fall back to email.
+          // If Formspree fails, open Gmail as fallback
           openMailtoFallback(form);
           showNotification(
-            "Form service unavailable. Your email client was opened instead.",
-            "error",
+            "Form service unavailable. Opening Gmail instead.",
+            "error"
           );
         }
-      } catch {
+      } catch (error) {
+        // If there's a network error, open Gmail as fallback
         openMailtoFallback(form);
         showNotification(
-          "Failed to send message. Your email client was opened instead.",
-          "error",
+          "Failed to send. Opening Gmail instead.",
+          "error"
         );
       } finally {
         submitBtn.textContent = originalText;
@@ -221,11 +232,13 @@ function openMailtoFallback(form) {
   const email = form.querySelector("#email").value.trim();
   const message = form.querySelector("#message").value.trim();
   const subject = encodeURIComponent(
-    `Message from ${name} via VL5 Icy portfolio`,
+    `Message from ${name} via Portfolio`
   );
   const body = encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
   );
+  
+  // This will open Gmail or your default email client
   window.location.href = `mailto:benecarr5@gmail.com?subject=${subject}&body=${body}`;
 }
 
@@ -326,12 +339,12 @@ document.querySelectorAll("section").forEach((section) => {
 document.addEventListener("keydown", (e) => {
   // Escape key closes mobile menu
   if (e.key === "Escape") {
-    const hamburger = document.querySelector(".hamburger"); // Get hamburger element
+    const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
 
     if (navMenu.classList.contains("active")) {
       hamburger.classList.remove("active");
-      navMenu.classList.remove("active"); // Close menu
+      navMenu.classList.remove("active");
       document.body.style.overflow = "";
     }
   }
